@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { Connection, Keypair, PublicKey, SystemProgram, Transaction, sendAndConfirmRawTransaction, sendAndConfirmTransaction } from '@solana/web3.js'
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
+import { Toaster, toast } from 'sonner';
 
 export default function IndexPage() {
   const { publicKey, connected, sendTransaction } = useWallet()
